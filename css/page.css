@@ -4474,7 +4474,7 @@ br{
         margin-bottom: 25px;
     }
     .m_shoes_area ul li a img{
-        width: 100%; display: block; height: 64.35vh; width: 23.37vw;
+        width: 100%; display: block; max-width: 423px;
     }
     .m_shoes_area ul li div{
         height: 50px; margin-bottom: 95px;
