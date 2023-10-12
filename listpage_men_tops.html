@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luisaviaroma</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <input type="search" placeholder="SEARCH" title="Please enter your search term">
+        <input type="button" class="btn_close" value="closebtn"> 
+    </div>
+    <header>
+        <div>
+            <input type="button" value="fnbOpen" class="mui" data-Panel="fnbPanel">
+            <nav id="fnbPanel">
+                <ul>
+                    <li>
+                        <b>WOMEN</b>
+                        <div class="fnbContainer">
+                            <ol>
+                                <li>
+                                    <span>
+                                        CLOTHING
+                                    </span>
+                                    <ul>
+                                        <li><a href="listpage_women_outwears.html">OUTWEARS</a></li>
+                                        <li><a href="listpage_women_dresses.html">DRESSES</a></li>
+                                        <li><a href="listpage_women_tops.html">TOPS</a></li>
+                                        <li><a href="listpage_women_bottoms.html">BOTTOMS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="listpage_women_bags.html">BAGS</a></li>
+                                <li><a href="listpage_women_shoes.html">SHOES</a></li>
+                            </ol>
+                        </div>   
+                    </li>
+                    <li>
+                        <b>MEN</b>
+                        <div class="fnbContainer">
+                            <ol>
+                                <li>
+                                    <span>
+                                        CLOTHING
+                                    </span>
+                                    <ul>
+                                        <li><a href="listpage_men_outwears.html">OUTWEARS</a></li>
+                                        <li><a href="listpage_men_tops.html">TOPS</a></li>
+                                        <li><a href="listpage_men_bottoms.html">BOTTOMS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="listpage_men_bags.html">BAGS</a></li>
+                                <li><a href="listpage_men_shoes.html">SHOES</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li><a href="lvrsustainable.html">LVRSUSTAINABLE</a></li>
+                </ul>
+                
+                <input type="button" class="btn_close" value="closeBtn">
+            </nav>
+            <h1>
+            <a href="index.html">
+                <img src="images/logo.png" alt="luisaviaroma logo">
+            </a> 
+            </h1>
+            <div>
+                <ul>
+                     <li>
+                         <input type="button" value="SEARCH" data-panel="searchPanel">
+                     </li>
+                     <li>
+                         <a href="account.html">ACCOUNT</a>
+                     </li>
+                     <li>
+                         <a href="shoppingbag.html">SHOPPING BAG</a>
+                     </li>
+                </ul> 
+            </div>
+        </div>
+    </header>
+
+    <section class="listArea">
+        <nav>
+            <ol>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="listpage_men_tops.html">MEN TOPS</a>
+                </li>
+            </ol>
+        </nav>
+        <h2>TOPS</h2>
+        <p>
+            The T-Shirt is a classic in every man’s wardrobe and shirt is the essential piece in any closet.<br>
+            The Sweatshirt is a functional and comfortable garment, perfect for the trendy Athleisure style.
+        </p>
+        <div>
+            <input type="button" value="Filter" data-panel="filterPanel">
+            <div id="filterPanel">
+                <form>
+                    <fieldset>
+                         <legend>COLOR</legend>
+                         <ul>
+                            <li>
+                                <input type="radio" name="filter-color" id="white-filter1">
+                                <label for="white-filter1">WHITE</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="black-filter2">
+                                <label for="black-filter2">BLACK</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="red-filter12">
+                                <label for="red-filter12">RED</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="green-filter3">
+                                <label for="green-filter3">GREEN</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="beige-filter4">
+                                <label for="beige-filter4">BEIGE</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="brown-filter9">
+                                <label for="brown-filter9">BROWN</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="pink-filter6">
+                                <label for="pink-filter6">PINK</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="multi-filter7">
+                                <label for="multi-filter7">MULTI</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="other-filter11">
+                                <label for="other-filter11">OTHER</label>
+                            </li>
+                         </ul>
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>SIZE</legend>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="42-filter1">
+                                <label for="42-filter1">42</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="44-filter2">
+                                <label for="44-filter2">44</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="46-filter3">
+                                <label for="46-filter3">46</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="48-filter4">
+                                <label for="48-filter4">48</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="50-filter5">
+                                <label for="50-filter5">50</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="52-filter6">
+                                <label for="52-filter6">52</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="54-filter7">
+                                <label for="54-filter7">54</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="56-filter8">
+                                <label for="56-filter8">56</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="58-filter9">
+                                <label for="58-filter9">58</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="60-filter10">
+                                <label for="60-filter10">60</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="62-filter11">
+                                <label for="62-filter11">62</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>SORT</legend>
+                        <ul>
+                            <li>
+                                <input type="radio" id="sort-filter1" name="sort">
+                                <label for="sort-filter1">Just in</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="sort-filter2" name="sort">
+                                <label for="sort-filter2">Price, low to high</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="sort-filter3" name="sort">
+                                <label for="sort-filter3">Price, high to low</label>
+                            </li>
+                        </ul>
+
+                    </fieldset>
+
+                    <div class="bottom-filter">
+                        <input type="reset" value="CLEAR ALL" class="btn_reset">
+                        <input type="button" value="CLOSE" class="btn_close">
+                    </div>
+                </form>
+            </div>
+            <ul>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_tops_1.html"><img src="images/mentops_01_02.jpg" data-imgnumb="mentops_01_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Moncler Genius <br>
+                                    Alicia Keys printed cotton t-shirt</dt>
+                                <dd>$372</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_tops_2.html"><img src="images/mentops_02_02.jpg" data-imgnumb="mentops_02_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Gallery Dept. <br>
+                                    Dead batteries logo cotton t-shirt</dt>
+                                <dd>$410</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_tops_3.html"><img src="images/mentops_03_02.jpg" data-imgnumb="mentops_03_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Homme + Femme La <br>
+                                    Hollywood Graphic cotton jersey t-shirt</dt>
+                                <dd>$115</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_tops_4.html"><img src="images/mentops_04_02.jpg" data-imgnumb="mentops_04_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Moncler <br>
+                                    Archivio Creativo t-shirt</dt>
+                                <dd>$399</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_tops_5.html"><img src="images/mentops_05_02.jpg" data-imgnumb="mentops_05_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Gucci <br>
+                                    Maxi GG silk &amp; cotton polo shirt</dt>
+                                <dd>$853</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_tops_6.html"><img src="images/mentops_06_02.jpg" data-imgnumb="mentops_06_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Moncler <br>
+                                    Archivio polo shirt</dt>
+                                <dd>$438</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_tops_7.html"><img src="images/mentops_07_02.jpg" data-imgnumb="mentops_07_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Adidas Originals <br>
+                                    Q2 logo polo shirt</dt>
+                                <dd>$49</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_tops_8.html"><img src="images/mentops_08_02.jpg" data-imgnumb="mentops_08_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Versace <br>
+                                    Greca jacquard cotton piquet polo</dt>
+                                <dd>$536</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_tops_9.html"><img src="images/mentops_09_02.jpg" data-imgnumb="mentops_09_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Casablanca <br>
+                                    L'Arche Fleurie silk twill shirt</dt>
+                                <dd>$870</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_tops_10.html"><img src="images/mentops_10_02.jpg" data-imgnumb="mentops_10_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Etro <br>
+                                    Flower print cotton poplin shirt</dt>
+                                <dd>$356</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_tops_11.html"><img src="images/mentops_11_02.jpg" data-imgnumb="mentops_11_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Wales Bonner <br>
+                                    Rhythm short sleeved shirt</dt>
+                                <dd>$476</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_tops_12.html"><img src="images/mentops_12_02.jpg" data-imgnumb="mentops_12_02"  alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Peninsula <br>
+                                    Regular linen shirt</dt>
+                                <dd>$119</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_tops_13.html"><img src="images/mentops_13_02.jpg" data-imgnumb="mentops_13_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Palm Angels <br>
+                                    Palms &amp; Skull vintage cotton hoodie</dt>
+                                <dd>$815</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_tops_14.html"><img src="images/mentops_14_02.jpg" data-imgnumb="mentops_14_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Balenciaga <br>
+                                    Cotton hoodie</dt>
+                                <dd>$930</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_tops_15.html"><img src="images/mentops_15_02.jpg" data-imgnumb="mentops_15_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>JW Anderson <br>
+                                    Bad apple hooded cotton sweatshirt</dt>
+                                <dd>$317</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_tops_16.html"><img src="images/mentops_16_02.jpg" data-imgnumb="mentops_16_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Erl <br>
+                                    Printed swirl cotton fleece hoodie</dt>
+                                <dd>$410</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_tops_17.html"><img src="images/mentops_17_02.jpg" data-imgnumb="mentops_17_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Kenzo Paris <br>
+                                    Elephant wool blend knit sweater</dt>
+                                <dd>$602</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_tops_18.html"><img src="images/mentops_18_02.jpg" data-imgnumb="mentops_18_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Dsquared2 <br>
+                                    Geometric jacquard knit sweater</dt>
+                                <dd>$755</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_tops_19.html"><img src="images/mentops_19_02.jpg" data-imgnumb="mentops_19_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Alanui <br>
+                                    Rainbow cotton knit crewneck sweater</dt>
+                                <dd>$1203</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_tops_20.html"><img src="images/mentops_20_02.jpg" data-imgnumb="mentops_20_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Gucci <br>
+                                    Kawaii striped cotton &amp; wool sweater</dt>
+                                <dd>$1313</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <div>
+                <h3>LUISAVIAROMA</h3>
+                <ul>
+                    <li><a href="footer_contactUs.html">CONTACT US</a></li>
+                    <li><a href="footer_ourStory.html">OUR STORY</a></li>
+                    <li><a href="footer_aboutUs.html">ABOUT US</a></li>
+                    <li><a href="footer_storesHours.html">STORES &amp; HOURS</a></li>
+                    <li><a href="footer_privacyPolicy.html">PRIVACY POLICY</a></li>
+                    <li><a href="footer_cookiePolicy.html">COOKIE POLICY</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>SHOPPING ONLINE</h3>
+                <ul>
+                    <li><a href="footer_pricesCurrency.html">PRICES &amp; CURRENCY</a></li>
+                    <li><a href="footer_orderPayment.html">ORDER PAYMENT</a></li>
+                    <li><a href="footer_shipmentFees.html">SHIPMENT &amp; FEES</a></li>
+                    <li><a href="footer_returnPolicy.html">RETURN POLICY</a></li>
+                    <li><a href="footer_termsConditions.html">TERMS &amp; CONDITIONS</a></li>
+                    <li><a href="footer_virtualGiftCard.html">VIRTUAL GIFT CARD</a></li>
+                </ul>
+            </div>
+            <div class="cs_sns">
+                <div>
+                    <h3>CUSTOMER SERVICE</h3>
+                    <a href="footer_FAQ.html">FREQUENTLY ASKED QUESTIONS</a>
+                </div>
+                <div>
+                    <h3>SIGN UP FOR NEWS &amp; UPDATES</h3>
+                    <input type="email" name="contact email" id="newsletter_email" placeholder="Enter your email...">
+                    <button class="material-symbols-outlined">
+                        arrow_forward
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="https://www.facebook.com/luisaviaroma/">facebook</a></li>
+                    <li><a href="https://www.instagram.com/luisaviaroma/">Instagram</a></li>
+                    <li><a href="https://twitter.com/LuisaViaRoma">Twitter</a></li>
+                    <!-- <li><a href="https://line.me/R/ti/p/@luisaviaroma?from=page&accountId=luisaviaroma">Line</a></li> -->
+                    <li><a href="https://www.youtube.com/user/Luisaviaroma">Youtube</a></li>
+                    <li><a href="https://mp.weixin.qq.com/s?__biz=MzIzMzMzNTc1MQ==&mid=100001291&idx=1&sn=3961e746a092fe71f24992efbd6d4b5a&chksm=688678a35ff1f1b5743c4153a525e928449cb0f9d5fb91673d279094f71fc40008c21b76b57f&mpshare=1&scene=1&srcid=0309N473TCj4MjfAYkcb7oru&pass_ticket=ftdBpTCwEnUwINolXwxdvcQr7QBS9bVfRdnHG8zGAfSu6oVjksxCwkf51h4lfvEL#rd">Wechat</a></li>
+                    <li><a href="https://www.pinterest.co.kr/luisaviaroma/">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2004-2023 LUISA VIA ROMA S.P.A. - VAT number: IT 00607970480 - Via Benedetto Varchi 61, 50132 Firenze</p>
+    </footer>
+</body>
+</html>

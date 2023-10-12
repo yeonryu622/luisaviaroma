@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luisaviaroma</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <input type="search" placeholder="SEARCH" title="Please enter your search term">
+        <input type="button" class="btn_close" value="closebtn"> 
+    </div>
+    <header>
+        <div>
+            <input type="button" value="fnbOpen" class="mui" data-Panel="fnbPanel">
+            <nav id="fnbPanel">
+                <ul>
+                    <li>
+                        <b>WOMEN</b>
+                        <div class="fnbContainer">
+                            <ol>
+                                <li>
+                                    <span>
+                                        CLOTHING
+                                    </span>
+                                    <ul>
+                                        <li><a href="listpage_women_outwears.html">OUTWEARS</a></li>
+                                        <li><a href="listpage_women_dresses.html">DRESSES</a></li>
+                                        <li><a href="listpage_women_tops.html">TOPS</a></li>
+                                        <li><a href="listpage_women_bottoms.html">BOTTOMS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="listpage_women_bags.html">BAGS</a></li>
+                                <li><a href="listpage_women_shoes.html">SHOES</a></li>
+                            </ol>
+                        </div>   
+                    </li>
+                    <li>
+                        <b>MEN</b>
+                        <div class="fnbContainer">
+                            <ol>
+                                <li>
+                                    <span>
+                                        CLOTHING
+                                    </span>
+                                    <ul>
+                                        <li><a href="listpage_men_outwears.html">OUTWEARS</a></li>
+                                        <li><a href="listpage_men_tops.html">TOPS</a></li>
+                                        <li><a href="listpage_men_bottoms.html">BOTTOMS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="listpage_men_bags.html">BAGS</a></li>
+                                <li><a href="listpage_men_shoes.html">SHOES</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li><a href="lvrsustainable.html">LVRSUSTAINABLE</a></li>
+                </ul>
+                
+                <input type="button" class="btn_close" value="closeBtn">
+            </nav>
+            <h1>
+            <a href="index.html">
+                <img src="images/logo.png" alt="luisaviaroma logo">
+            </a> 
+            </h1>
+            <div>
+                <ul>
+                     <li>
+                         <input type="button" value="SEARCH" data-panel="searchPanel">
+                     </li>
+                     <li>
+                         <a href="account.html">ACCOUNT</a>
+                     </li>
+                     <li>
+                         <a href="shoppingbag.html">SHOPPING BAG</a>
+                     </li>
+                </ul> 
+            </div>
+        </div>
+    </header>
+
+    <section class="listArea">
+        <nav>
+            <ol>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="listpage_women_bags.html">WOMEN BAGS</a>
+                </li>
+            </ol>
+        </nav>
+        <h2>BAGS</h2>
+        <p>
+            The bag is a woman’s best friend. Large and functional or mini and iconic, the bag is a key accessory in your life. <br>
+            Choose from shoulder bags, clutches, top handle bags, belt bags, tote bags, backpacks, and much more from the new collections. 
+        </p>
+        <div>
+            <input type="button" value="Filter" data-panel="filterPanel">
+            <div id="filterPanel">
+                <form>
+                    <fieldset>
+                         <legend>COLOR</legend>
+                         <ul>
+                            <li>
+                                <input type="radio" name="filter-color" id="white-filter1">
+                                <label for="white-filter1">WHITE</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="black-filter2">
+                                <label for="black-filter2">BLACK</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="beige-filter4">
+                                <label for="beige-filter4">BEIGE</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="brown-filter9">
+                                <label for="brown-filter9">BROWN</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="pink-filter6">
+                                <label for="pink-filter6">PINK</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="multi-filter7">
+                                <label for="multi-filter7">MULTI</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="gray-filter8">
+                                <label for="gray-filter8">GRAY</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="other-filter11">
+                                <label for="other-filter11">OTHER</label>
+                            </li>
+                         </ul>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>SIZE</legend>
+                        <small>NONE</small>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>SORT</legend>
+                        <ul>
+                            <li>
+                                <input type="radio" id="sort-filter1" name="sort">
+                                <label for="sort-filter1">Just in</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="sort-filter2" name="sort">
+                                <label for="sort-filter2">Price, low to high</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="sort-filter3" name="sort">
+                                <label for="sort-filter3">Price, high to low</label>
+                            </li>
+                        </ul>
+
+                    </fieldset>
+
+                    <div class="bottom-filter">
+                        <input type="reset" value="CLEAR ALL" class="btn_reset">
+                        <input type="button" value="CLOSE" class="btn_close">
+                    </div>
+                </form>
+            </div>
+            <ul>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bags_1.html"><img src="images/womenbags_01_02.jpg" data-imgnumb="womenbags_01_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Bembien <br>
+                                    Luna rattan shoulder bag</dt>
+                                <dd>$310</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bags_2.html"><img src="images/womenbags_02_02.jpg" data-imgnumb="womenbags_02_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Saint Laurent <br>
+                                    Le 5 à 7 leather &amp; cotton hobo bag</dt>
+                                <dd>$1958</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bags_3.html"><img src="images/womenbags_03_02.jpg" data-imgnumb="womenbags_03_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Bottega Veneta<br>
+                                    Teen Jodie suede bag</dt>
+                                <dd>$3500</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bags_4.html"><img src="images/womenbags_04_02.jpg" data-imgnumb="womenbags_04_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Bottega Veneta<br>
+                                    Sardine leather top handle bag</dt>
+                                <dd>$4200</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bags_5.html"><img src="images/womenbags_05_02.jpg" data-imgnumb="womenbags_05_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Valentino Garavani <br>
+                                    Rockstud leather pouch</dt>
+                                <dd>$897</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bags_6.html"><img src="images/womenbags_06_02.jpg" data-imgnumb="womenbags_06_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Etro <br>
+                                    Crown Me canvas &amp; leather bucket bag</dt>
+                                <dd>$1258</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bags_7.html"><img src="images/womenbags_07_02.jpg" data-imgnumb="womenbags_07_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Balmain <br>
+                                    B-army leather &amp; canvas logo camera bag</dt>
+                                <dd>$864</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bags_8.html"><img src="images/womenbags_08_02.jpg" data-imgnumb="womenbags_08_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Gucci <br>
+                                    Gucci Deco quilted leather shoulder bag</dt>
+                                <dd>$2735</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpagewbags9"><img src="images/womenbags_09_02.jpg" data-imgnumb="womenbags_09_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Saint Laurent <br>
+                                    Gaby leather shoulder bag</dt>
+                                <dd>$1083</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bags_10.html"><img src="images/womenbags_10_02.jpg" data-imgnumb="womenbags_10_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Tod's <br>
+                                    Shopping leather shoulder bag</dt>
+                                <dd>$1641</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bags_11.html"><img src="images/womenbags_11_02.jpg" data-imgnumb="womenbags_11_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Moncler <br>
+                                    Nalani canvas tote bag</dt>
+                                <dd>$881</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bags_12.html"><img src="images/womenbags_12_02.jpg" data-imgnumb="womenbags_12_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Valentino Garavani <br>
+                                    Roman Stud small shoulder bag</dt>
+                                <dd>$2626</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bags_13.html"><img src="images/womenbags_13_02.jpg" data-imgnumb="womenbags_13_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>The Row <br>
+                                    Aspen leather clutch</dt>
+                                <dd>$2483</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bags_14.html"><img src="images/womenbags_14_02.jpg" data-imgnumb="womenbags_14_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Destree <br>
+                                    Medium Albert quilted shoulder bag</dt>
+                                <dd>$711</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bags_15.html"><img src="images/womenbags_15_02.jpg" data-imgnumb="womenbags_15_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Burberry <br>
+                                    Small heritage tote bag</dt>
+                                <dd>$1521</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bags_16.html"><img src="images/womenbags_16_02.jpg" data-imgnumb="womenbags_16_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Bottega Veneta  <br>
+                                    Small classic intrecciato tote bag</dt>
+                                <dd>$2735</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bags_17.html"><img src="images/womenbags_17_02.jpg" data-imgnumb="womenbags_17_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Saint Laurent <br>
+                                    Small Le 37 leather bucket bag</dt>
+                                <dd>$2790</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bags_18.html"><img src="images/womenbags_18_02.jpg" data-imgnumb="womenbags_18_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Gucci <br>
+                                    Dionysus GG canvas top handle bag</dt>
+                                <dd>$2407</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bags_19.html"><img src="images/womenbags_19_02.jpg" data-imgnumb="womenbags_19_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Balenciaga <br>
+                                    Small Crush chain quilted leather bag</dt>
+                                <dd>$2516</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bags_20.html"><img src="images/womenbags_20_02.jpg" data-imgnumb="womenbags_20_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Balenciaga <br>
+                                    Small Duty Free leather &amp; mesh tote</dt>
+                                <dd>$1586</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <div>
+                <h3>LUISAVIAROMA</h3>
+                <ul>
+                    <li><a href="footer_contactUs.html">CONTACT US</a></li>
+                    <li><a href="footer_ourStory.html">OUR STORY</a></li>
+                    <li><a href="footer_aboutUs.html">ABOUT US</a></li>
+                    <li><a href="footer_storesHours.html">STORES &amp; HOURS</a></li>
+                    <li><a href="footer_privacyPolicy.html">PRIVACY POLICY</a></li>
+                    <li><a href="footer_cookiePolicy.html">COOKIE POLICY</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>SHOPPING ONLINE</h3>
+                <ul>
+                    <li><a href="footer_pricesCurrency.html">PRICES &amp; CURRENCY</a></li>
+                    <li><a href="footer_orderPayment.html">ORDER PAYMENT</a></li>
+                    <li><a href="footer_shipmentFees.html">SHIPMENT &amp; FEES</a></li>
+                    <li><a href="footer_returnPolicy.html">RETURN POLICY</a></li>
+                    <li><a href="footer_termsConditions.html">TERMS &amp; CONDITIONS</a></li>
+                    <li><a href="footer_virtualGiftCard.html">VIRTUAL GIFT CARD</a></li>
+                </ul>
+            </div>
+            <div class="cs_sns">
+                <div>
+                    <h3>CUSTOMER SERVICE</h3>
+                    <a href="footer_FAQ.html">FREQUENTLY ASKED QUESTIONS</a>
+                </div>
+                <div>
+                    <h3>SIGN UP FOR NEWS &amp; UPDATES</h3>
+                    <input type="email" name="contact email" id="newsletter_email" placeholder="Enter your email...">
+                    <button class="material-symbols-outlined">
+                        arrow_forward
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="https://www.facebook.com/luisaviaroma/">facebook</a></li>
+                    <li><a href="https://www.instagram.com/luisaviaroma/">Instagram</a></li>
+                    <li><a href="https://twitter.com/LuisaViaRoma">Twitter</a></li>
+                    <!-- <li><a href="https://line.me/R/ti/p/@luisaviaroma?from=page&accountId=luisaviaroma">Line</a></li> -->
+                    <li><a href="https://www.youtube.com/user/Luisaviaroma">Youtube</a></li>
+                    <li><a href="https://mp.weixin.qq.com/s?__biz=MzIzMzMzNTc1MQ==&mid=100001291&idx=1&sn=3961e746a092fe71f24992efbd6d4b5a&chksm=688678a35ff1f1b5743c4153a525e928449cb0f9d5fb91673d279094f71fc40008c21b76b57f&mpshare=1&scene=1&srcid=0309N473TCj4MjfAYkcb7oru&pass_ticket=ftdBpTCwEnUwINolXwxdvcQr7QBS9bVfRdnHG8zGAfSu6oVjksxCwkf51h4lfvEL#rd">Wechat</a></li>
+                    <li><a href="https://www.pinterest.co.kr/luisaviaroma/">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2004-2023 LUISA VIA ROMA S.P.A. - VAT number: IT 00607970480 - Via Benedetto Varchi 61, 50132 Firenze</p>
+    </footer>
+</body>
+</html>

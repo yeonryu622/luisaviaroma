@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luisaviaroma</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <input type="search" placeholder="SEARCH" title="Please enter your search term">
+        <input type="button" class="btn_close" value="closebtn"> 
+    </div>
+    <header>
+        <div>
+            <input type="button" value="fnbOpen" class="mui" data-Panel="fnbPanel">
+            <nav id="fnbPanel">
+                <ul>
+                    <li>
+                        <b>WOMEN</b>
+                        <div class="fnbContainer">
+                            <ol>
+                                <li>
+                                    <span>
+                                        CLOTHING
+                                    </span>
+                                    <ul>
+                                        <li><a href="listpage_women_outwears.html">OUTWEARS</a></li>
+                                        <li><a href="listpage_women_dresses.html">DRESSES</a></li>
+                                        <li><a href="listpage_women_tops.html">TOPS</a></li>
+                                        <li><a href="listpage_women_bottoms.html">BOTTOMS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="listpage_women_bags.html">BAGS</a></li>
+                                <li><a href="listpage_women_shoes.html">SHOES</a></li>
+                            </ol>
+                        </div>   
+                    </li>
+                    <li>
+                        <b>MEN</b>
+                        <div class="fnbContainer">
+                            <ol>
+                                <li>
+                                    <span>
+                                        CLOTHING
+                                    </span>
+                                    <ul>
+                                        <li><a href="listpage_men_outwears.html">OUTWEARS</a></li>
+                                        <li><a href="listpage_men_tops.html">TOPS</a></li>
+                                        <li><a href="listpage_men_bottoms.html">BOTTOMS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="listpage_men_bags.html">BAGS</a></li>
+                                <li><a href="listpage_men_shoes.html">SHOES</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li><a href="lvrsustainable.html">LVRSUSTAINABLE</a></li>
+                </ul>
+                
+                <input type="button" class="btn_close" value="closeBtn">
+            </nav>
+            <h1>
+            <a href="index.html">
+                <img src="images/logo.png" alt="luisaviaroma logo">
+            </a> 
+            </h1>
+            <div>
+                <ul>
+                     <li>
+                         <input type="button" value="SEARCH" data-panel="searchPanel">
+                     </li>
+                     <li>
+                         <a href="account.html">ACCOUNT</a>
+                     </li>
+                     <li>
+                         <a href="shoppingbag.html">SHOPPING BAG</a>
+                     </li>
+                </ul> 
+            </div>
+        </div>
+    </header>
+
+    <section class="checkOut_shipping_Area">
+        <nav>
+            <ol>
+                <li>
+                    <a href="shoppingbag.html">Shopping Bag</a>
+                </li>
+                <li>
+                    <a href="checkout_shipping.html">Information &amp; Shipping</a>
+                </li>
+                <li>
+                    <a href="checkout_payment.html">Payment</a>
+                </li>
+            </ol>
+        </nav>
+        <div>
+            <h2>Contact information</h2>
+            <span>HA YEONRYU (yeonryu622@naver.com)</span>
+            <a href="login.html">log out</a>
+            <span>
+                <input type="checkbox" id="checkTerms">
+                <label for="checkTerms">
+                    By signing-up for the newsletter, you agree with LUISAVIAROMA 
+                </label>
+                <a href="footer_termsConditions.html">Terms &amp; Conditions </a>
+                and
+                <a href="footer_privacyPolicy.html">Privacy Policy.</a>
+            </span>
+        </div>
+
+        <form action="checkout_payment.html">
+            <div>
+                <fieldset>
+                    <legend>Shipping address</legend>
+                    <ul>
+                        <li>
+                            <label for="savedAdd_Select">Saved addresses</label>
+                            <select id="savedAdd_Select">
+                                <option>United States (HA YEONRYU)</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="country_Select">Country/region</label>
+                            <select id="country_Select">
+                                <option>United States</option>
+                                <option>United Kingdom, Northern Ireland</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="userFirstName">First name(optional)</label>
+                            <input type="text" id="userFirstName" placeholder="HA">
+                        </li>
+                        <li>
+                            <label for="userLastName">Last name</label>
+                            <input type="text" id="userLastName" placeholder="YEONRYU">
+                        </li>
+                        <li>
+                            <label for="userAddress">Address</label>
+                            <input type="text" id="userAddress" placeholder="Address">
+                        </li>
+                        <li>
+                            <label for="userAddressEtc">Address etc</label>
+                            <input type="text" id="userAddressEtc" placeholder="Apartment, suite, etc. (optional)">
+                        </li>
+                        <li>
+                            <label for="userCity">CITY</label>
+                            <input type="text" id="userCity" placeholder="City">
+                        </li>
+                        <li>
+                            <label for="state_Select">State</label>
+                            <select id="state_Select">
+                                <option selected>State</option>
+                                <option>Northern Mariana Island</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="userCode">ZIP code</label>
+                            <input type="text" id="userCode" placeholder="ZIP code">
+                        </li>
+                        <li>
+                            <label for="userPhoneNumber">PHONE</label>
+                            <input type="text" id="userPhoneNumber" placeholder="Phone">
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+
+            <div>
+                <h2>Shipping method</h2>
+                <dl>
+                    <dt>Express</dt>
+                    <dd>1 - 2 business days after shipping</dd>
+                    <dd>$10.00</dd>
+                </dl>
+            </div>
+
+            <div>
+                <a href="shoppingbag.html">Return to shopping bag</a>
+                <input type="submit" value="Continue to payment">
+            </div>
+        </form>
+
+        <aside>
+            <ol>
+                <li>
+                    <div>
+                        <img src="images/womendress_02_02HOVER.jpg" alt="checkoutProductImage">
+                        <span>1</span>
+                    </div>
+                    <dl>
+                        <dt>Agua By Agua Bendita</dt>
+                        <dd>Lima Pradera embroidery <br>
+                            linen long dress</dd>
+                        <dd>Ivory / 38</dd>
+                    </dl>
+                    <span>$1,720.00</span>
+                </li>
+            </ol>
+
+           <div>
+                <ul>
+                    <li>
+                        <span>Subtotal</span> 
+                        <span>$1,720.00</span>
+                    </li>
+                    <li>
+                        <span>Shipping</span>
+                        <span>$10.00</span>
+                    </li>
+                    <li>
+                        <span>Sales Taxes</span>
+                        <span>$132.80</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <span>Total</span>
+                        <span>$1,862.80</span>
+                    </li>
+                </ul>
+           </div> 
+        </aside>
+    </section>
+
+    <footer>
+        <div>
+            <div>
+                <h3>LUISAVIAROMA</h3>
+                <ul>
+                    <li><a href="footer_contactUs.html">CONTACT US</a></li>
+                    <li><a href="footer_ourStory.html">OUR STORY</a></li>
+                    <li><a href="footer_aboutUs.html">ABOUT US</a></li>
+                    <li><a href="footer_storesHours.html">STORES &amp; HOURS</a></li>
+                    <li><a href="footer_privacyPolicy.html">PRIVACY POLICY</a></li>
+                    <li><a href="footer_cookiePolicy.html">COOKIE POLICY</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>SHOPPING ONLINE</h3>
+                <ul>
+                    <li><a href="footer_pricesCurrency.html">PRICES &amp; CURRENCY</a></li>
+                    <li><a href="footer_orderPayment.html">ORDER PAYMENT</a></li>
+                    <li><a href="footer_shipmentFees.html">SHIPMENT &amp; FEES</a></li>
+                    <li><a href="footer_returnPolicy.html">RETURN POLICY</a></li>
+                    <li><a href="footer_termsConditions.html">TERMS &amp; CONDITIONS</a></li>
+                    <li><a href="footer_virtualGiftCard.html">VIRTUAL GIFT CARD</a></li>
+                </ul>
+            </div>
+            <div class="cs_sns">
+                <div>
+                    <h3>CUSTOMER SERVICE</h3>
+                    <a href="footer_FAQ.html">FREQUENTLY ASKED QUESTIONS</a>
+                </div>
+                <div>
+                    <h3>SIGN UP FOR NEWS &amp; UPDATES</h3>
+                    <input type="email" name="contact email" id="newsletter_email" placeholder="Enter your email...">
+                    <button class="material-symbols-outlined">
+                        arrow_forward
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="https://www.facebook.com/luisaviaroma/">facebook</a></li>
+                    <li><a href="https://www.instagram.com/luisaviaroma/">Instagram</a></li>
+                    <li><a href="https://twitter.com/LuisaViaRoma">Twitter</a></li>
+                    <!-- <li><a href="https://line.me/R/ti/p/@luisaviaroma?from=page&accountId=luisaviaroma">Line</a></li> -->
+                    <li><a href="https://www.youtube.com/user/Luisaviaroma">Youtube</a></li>
+                    <li><a href="https://mp.weixin.qq.com/s?__biz=MzIzMzMzNTc1MQ==&mid=100001291&idx=1&sn=3961e746a092fe71f24992efbd6d4b5a&chksm=688678a35ff1f1b5743c4153a525e928449cb0f9d5fb91673d279094f71fc40008c21b76b57f&mpshare=1&scene=1&srcid=0309N473TCj4MjfAYkcb7oru&pass_ticket=ftdBpTCwEnUwINolXwxdvcQr7QBS9bVfRdnHG8zGAfSu6oVjksxCwkf51h4lfvEL#rd">Wechat</a></li>
+                    <li><a href="https://www.pinterest.co.kr/luisaviaroma/">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2004-2023 LUISA VIA ROMA S.P.A. - VAT number: IT 00607970480 - Via Benedetto Varchi 61, 50132 Firenze</p>
+    </footer>
+</body>
+</html>

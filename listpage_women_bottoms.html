@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luisaviaroma</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <input type="search" placeholder="SEARCH" title="Please enter your search term">
+        <input type="button" class="btn_close" value="closebtn"> 
+    </div>
+    <header>
+        <div>
+            <input type="button" value="fnbOpen" class="mui" data-Panel="fnbPanel">
+            <nav id="fnbPanel">
+                <ul>
+                    <li>
+                        <b>WOMEN</b>
+                        <div class="fnbContainer">
+                            <ol>
+                                <li>
+                                    <span>
+                                        CLOTHING
+                                    </span>
+                                    <ul>
+                                        <li><a href="listpage_women_outwears.html">OUTWEARS</a></li>
+                                        <li><a href="listpage_women_dresses.html">DRESSES</a></li>
+                                        <li><a href="listpage_women_tops.html">TOPS</a></li>
+                                        <li><a href="listpage_women_bottoms.html">BOTTOMS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="listpage_women_bags.html">BAGS</a></li>
+                                <li><a href="listpage_women_shoes.html">SHOES</a></li>
+                            </ol>
+                        </div>   
+                    </li>
+                    <li>
+                        <b>MEN</b>
+                        <div class="fnbContainer">
+                            <ol>
+                                <li>
+                                    <span>
+                                        CLOTHING
+                                    </span>
+                                    <ul>
+                                        <li><a href="listpage_men_outwears.html">OUTWEARS</a></li>
+                                        <li><a href="listpage_men_tops.html">TOPS</a></li>
+                                        <li><a href="listpage_men_bottoms.html">BOTTOMS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="listpage_men_bags.html">BAGS</a></li>
+                                <li><a href="listpage_men_shoes.html">SHOES</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li><a href="lvrsustainable.html">LVRSUSTAINABLE</a></li>
+                </ul>
+                
+                <input type="button" class="btn_close" value="closeBtn">
+            </nav>
+            <h1>
+            <a href="index.html">
+                <img src="images/logo.png" alt="luisaviaroma logo">
+            </a> 
+            </h1>
+            <div>
+                <ul>
+                     <li>
+                         <input type="button" value="SEARCH" data-panel="searchPanel">
+                     </li>
+                     <li>
+                         <a href="account.html">ACCOUNT</a>
+                     </li>
+                     <li>
+                         <a href="shoppingbag.html">SHOPPING BAG</a>
+                     </li>
+                </ul> 
+            </div>
+        </div>
+    </header>
+
+    <section class="listArea">
+        <nav>
+            <ol>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="listpage_women_bottoms.html">WOMEN BOTTOMS</a>
+                </li>
+            </ol>
+        </nav>
+        <h2>BOTTOMS</h2>
+        <p>
+            Find the perfect Pant,short and skirt for any occasion.
+        </p>
+        <div>
+            <input type="button" value="Filter" data-panel="filterPanel">
+            <div id="filterPanel">
+                <form>
+                    <fieldset>
+                         <legend>COLOR</legend>
+                         <ul>
+                            <li>
+                                <input type="radio" name="filter-color" id="white-filter1">
+                                <label for="white-filter1">WHITE</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="black-filter2">
+                                <label for="black-filter2">BLACK</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="beige-filter4">
+                                <label for="beige-filter4">BEIGE</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="blue-filter5">
+                                <label for="blue-filter5">BLUE</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="brown-filter9">
+                                <label for="brown-filter9">BROWN</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="pink-filter6">
+                                <label for="pink-filter6">PINK</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="multi-filter7">
+                                <label for="multi-filter7">MULTI</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="other-filter11">
+                                <label for="other-filter11">OTHER</label>
+                            </li>
+                         </ul>
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>SIZE</legend>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="34-filter0">
+                                <label for="34-filter0">34</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="36-filter1">
+                                <label for="36-filter1">36</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="38-filter2">
+                                <label for="38-filter2">38</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="40-filter3">
+                                <label for="40-filter3">40</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="42-filter4">
+                                <label for="42-filter4">42</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="44-filter5">
+                                <label for="44-filter5">44</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="46-filter6">
+                                <label for="46-filter6">46</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="48-filter7">
+                                <label for="48-filter7">48</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="50-filter8">
+                                <label for="50-filter8">50</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>SORT</legend>
+                        <ul>
+                            <li>
+                                <input type="radio" id="sort-filter1" name="sort">
+                                <label for="sort-filter1">Just in</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="sort-filter2" name="sort">
+                                <label for="sort-filter2">Price, low to high</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="sort-filter3" name="sort">
+                                <label for="sort-filter3">Price, high to low</label>
+                            </li>
+                        </ul>
+
+                    </fieldset>
+
+                    <div class="bottom-filter">
+                        <input type="reset" value="CLEAR ALL" class="btn_reset">
+                        <input type="button" value="CLOSE" class="btn_close">
+                    </div>
+                </form>
+            </div>
+            <ul>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bottoms_1.html"><img src="images/womenbottoms_01_02.jpg" data-imgnumb="womenbottoms_01_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Toteme <br>
+                                    Twisted seam full length denim jeans</dt>
+                                <dd>$263</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bottoms_2.html"><img src="images/womenbottoms_02_02.jpg" data-imgnumb="womenbottoms_02_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>RE/DONE <br>
+                                    70s High rise skinny boot cotton jeans</dt>
+                                <dd>$394</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bottoms_3.html"><img src="images/womenbottoms_03_02.jpg" data-imgnumb="womenbottoms_03_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Alanui <br>
+                                    California patchwork cotton denim jeans</dt>
+                                <dd>$821</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bottoms_4.html"><img src="images/womenbottoms_04_02.jpg" data-imgnumb="womenbottoms_04_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>The Attico <br>
+                                    Panya cotton denim embellished jeans</dt>
+                                <dd>$2111</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bottoms_5.html"><img src="images/womenbottoms_05_02.jpg" data-imgnumb="womenbottoms_05_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Etro <br>
+                                    Embroidered denim wide jeans</dt>
+                                <dd>$864</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bottoms_6.html"><img src="images/womenbottoms_06_02.jpg" data-imgnumb="womenbottoms_06_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>ANINE BING <br>
+                                    Carrie silk satin straight pants</dt>
+                                <dd>$438</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bottoms_7.html"><img src="images/womenbottoms_07_02.jpg" data-imgnumb="womenbottoms_07_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Patbo <br>
+                                    Eyelet wide leg pants</dt>
+                                <dd>$897</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bottoms_8.html"><img src="images/womenbottoms_08_02.jpg" data-imgnumb="womenbottoms_08_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Rochas <br>
+                                    Macro check canvas wide pants</dt>
+                                <dd>$853</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bottoms_9.html"><img src="images/womenbottoms_09_02.jpg" data-imgnumb="womenbottoms_09_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Tom Ford <br>
+                                    Logo silk satin pajama pants</dt>
+                                <dd>$711</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bottoms_10.html"><img src="images/womenbottoms_10_02.jpg" data-imgnumb="womenbottoms_10_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Toteme <br>
+                                    Deep pleat wool &amp; linen pants</dt>
+                                <dd>$361</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bottoms_11.html"><img src="images/womenbottoms_11_02.jpg" data-imgnumb="womenbottoms_11_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Balmain <br>
+                                    Linen &amp; silk canvas fringed mini shorts</dt>
+                                <dd>$1630</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bottoms_12.html"><img src="images/womenbottoms_12_02.jpg" data-imgnumb="womenbottoms_12_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Philosophy Di Lorenzo Serafini <br>
+                                    Printed cotton poplin shorts</dt>
+                                <dd>$372</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bottoms_13.html"><img src="images/womenbottoms_13_02.jpg" data-imgnumb="womenbottoms_13_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Philosophy Di Lorenzo Serafini <br>
+                                    LVR Exclusive recycled denim shorts</dt>
+                                <dd>$459</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bottoms_14.html"><img src="images/womenbottoms_14_02.jpg" data-imgnumb="womenbottoms_14_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>REDValentino <br>
+                                    Double cotton gingham mini skirt</dt>
+                                <dd>$323</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bottoms_15.html"><img src="images/womenbottoms_15_02.jpg" data-imgnumb="womenbottoms_15_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Marant Etoile <br>
+                                    Linima printed cotton shorts</dt>
+                                <dd>$323</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bottoms_16.html"><img src="images/womenbottoms_16_02.jpg" data-imgnumb="womenbottoms_16_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Andersson Bell <br>
+                                    Arina heart leather mini skirt</dt>
+                                <dd>$497</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bottoms_17.html"><img src="images/womenbottoms_17_02.jpg" data-imgnumb="womenbottoms_17_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Versace <br>
+                                    Asymmetric silk georgette mini skirt</dt>
+                                <dd>$2177</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bottoms_18.html"><img src="images/womenbottoms_18_02.jpg" data-imgnumb="womenbottoms_18_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Zimmermann <br>
+                                    Tama floral print linen &amp; silk mini skirt</dt>
+                                <dd>$821</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bottoms_19.html"><img src="images/womenbottoms_19_02.jpg" data-imgnumb="womenbottoms_19_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Saint Laurent <br>
+                                    Silk skirt</dt>
+                                <dd>$6564</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_w_bottoms_20.html"><img src="images/womenbottoms_20_02.jpg" data-imgnumb="womenbottoms_20_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Self-portrait <br>
+                                    White beaded sequin maxi skirt</dt>
+                                <dd>$438</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <div>
+                <h3>LUISAVIAROMA</h3>
+                <ul>
+                    <li><a href="footer_contactUs.html">CONTACT US</a></li>
+                    <li><a href="footer_ourStory.html">OUR STORY</a></li>
+                    <li><a href="footer_aboutUs.html">ABOUT US</a></li>
+                    <li><a href="footer_storesHours.html">STORES &amp; HOURS</a></li>
+                    <li><a href="footer_privacyPolicy.html">PRIVACY POLICY</a></li>
+                    <li><a href="footer_cookiePolicy.html">COOKIE POLICY</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>SHOPPING ONLINE</h3>
+                <ul>
+                    <li><a href="footer_pricesCurrency.html">PRICES &amp; CURRENCY</a></li>
+                    <li><a href="footer_orderPayment.html">ORDER PAYMENT</a></li>
+                    <li><a href="footer_shipmentFees.html">SHIPMENT &amp; FEES</a></li>
+                    <li><a href="footer_returnPolicy.html">RETURN POLICY</a></li>
+                    <li><a href="footer_termsConditions.html">TERMS &amp; CONDITIONS</a></li>
+                    <li><a href="footer_virtualGiftCard.html">VIRTUAL GIFT CARD</a></li>
+                </ul>
+            </div>
+            <div class="cs_sns">
+                <div>
+                    <h3>CUSTOMER SERVICE</h3>
+                    <a href="footer_FAQ.html">FREQUENTLY ASKED QUESTIONS</a>
+                </div>
+                <div>
+                    <h3>SIGN UP FOR NEWS &amp; UPDATES</h3>
+                    <input type="email" name="contact email" id="newsletter_email" placeholder="Enter your email...">
+                    <button class="material-symbols-outlined">
+                        arrow_forward
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="https://www.facebook.com/luisaviaroma/">facebook</a></li>
+                    <li><a href="https://www.instagram.com/luisaviaroma/">Instagram</a></li>
+                    <li><a href="https://twitter.com/LuisaViaRoma">Twitter</a></li>
+                    <!-- <li><a href="https://line.me/R/ti/p/@luisaviaroma?from=page&accountId=luisaviaroma">Line</a></li> -->
+                    <li><a href="https://www.youtube.com/user/Luisaviaroma">Youtube</a></li>
+                    <li><a href="https://mp.weixin.qq.com/s?__biz=MzIzMzMzNTc1MQ==&mid=100001291&idx=1&sn=3961e746a092fe71f24992efbd6d4b5a&chksm=688678a35ff1f1b5743c4153a525e928449cb0f9d5fb91673d279094f71fc40008c21b76b57f&mpshare=1&scene=1&srcid=0309N473TCj4MjfAYkcb7oru&pass_ticket=ftdBpTCwEnUwINolXwxdvcQr7QBS9bVfRdnHG8zGAfSu6oVjksxCwkf51h4lfvEL#rd">Wechat</a></li>
+                    <li><a href="https://www.pinterest.co.kr/luisaviaroma/">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2004-2023 LUISA VIA ROMA S.P.A. - VAT number: IT 00607970480 - Via Benedetto Varchi 61, 50132 Firenze</p>
+    </footer>
+</body>
+</html>

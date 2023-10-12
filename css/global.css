@@ -1,0 +1,771 @@
+body{
+    background-color: #ffffff;
+}
+header nav ul li b,
+header nav ul li:last-child a,
+.header_right li,
+#searchPanel input,
+footer:not(h3+p),
+#popUp p + fieldset{
+    font-family: "Noto Sans";
+    font-weight: 400;
+}
+footer > h3 + p{
+    font-family: "Noto Sans";
+    font-weight: 700;
+}
+#popUp h2{
+    font-family: "Archivo";
+    font-weight: 300;
+}
+#popUp > input{
+    font-family: "Crimson Pro";
+    font-weight: 300;
+}
+input[type='radio'],
+input[type='checkbox']{
+    display: none;
+}
+ol,ul{
+    list-style: none;
+}
+.bx-controls-direction{
+    text-indent: -9999px;
+}
+a{
+    text-decoration: none; color: inherit; 
+}
+.btn_close{
+    text-indent: -9999px; 
+    /* display: none; */
+}
+.visually-hidden{
+    display: none;
+}
+@media screen and (max-width: 767px){
+    [id$='Panel']{
+        display: none;  
+    }
+    [id$='Panel'].active{
+        display: block;
+    }
+    .mui{
+        display: block;
+    }
+    header nav > input,
+    .videoArea div,
+    .man_area,
+    .w_bags_area,
+    .listArea,
+    footer div,
+    footer p{
+      width: 94%;  margin: 0 auto;
+    }
+    header{
+        position: fixed; left: 0; top: 0; z-index: 10; width: 100%; 
+        cursor: default; background-color: #fff;
+    }
+    header:hover{
+        background-color: #f2f2f2;
+    }
+    header > div{
+        position: relative; padding: 15px 0;
+    }
+    header nav ul li{
+        display: none;
+    }
+    header > div > input{
+        width: 18px; height: 18px;  position: fixed; left: 2%;
+        text-indent: -9999px;
+        border-style: none; box-sizing: border-box; background-color: transparent; background: no-repeat center;        
+    }
+    header > div .mui{
+        display: block;
+        background: url("../images/bul_mui.png");
+    }
+    header nav{
+        width: 100%; position: fixed; left: 0; height: 100%;
+        top: 49px; z-index: 10; align-content: flex-start; background-color: #f2f2f2;
+    }
+    header nav > ul{
+        padding: 50px 3%; box-sizing: border-box;
+    }
+    header nav ul li{
+        display: block;
+    }
+    header > div > div{
+        text-align: right; margin-right: 2%;
+    }
+    header > div > div ul li *{
+        font-size: 15px;
+    }
+    header > div > div ul li input[type='button']{
+        background-color: transparent; border: none;    
+    }
+    header > div > div ul li{
+        display: inline-block; vertical-align: middle;
+    }
+    header > div > div ul li:not(:last-child){
+        margin-right: 1%;
+    }
+    header > div > div ul li input{
+        display: inline-block; text-indent: -9999px; width: 18px; height: 18px; 
+        border-style: none; box-sizing: border-box; 
+        background-color: transparent; background: no-repeat center;  
+    }
+    header > div > div ul li input{
+        background-image: url("../images/bul_search.png");
+    }
+    header > div > div ul li a{
+        display: block; text-indent: -9999px; background-repeat: no-repeat;  border-style: none; box-sizing: border-box; 
+        background-size: contain;  width: 18px; height: 18px; text-align: left;
+    }
+    header > div > div ul li:nth-child(2) a{
+        background-image: url("../images/bul_account.png");
+    }
+    header > div > div ul li:last-child a{
+        background-image: url("../images/bul_shoppingbag.png");
+    }
+    header nav .btn_close{
+        display: block; left: 42%; top: 5%; position: absolute;
+        background: url('../images/bul_closeBtn.png') no-repeat center / 15px;
+        border-style: none; background-color: transparent; box-sizing: border-box;
+    }
+    .fnbContainer{
+       width: 100%; height: 100%;
+    }
+    .fnbContainer ol{
+       margin-left: 2%;   
+
+    }
+    .fnbContainer ol li {
+        display: block;
+    }
+    .fnbContainer ol li ,
+    .fnbContainer ol > li a{
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        color: #616161;
+    }
+    .fnbContainer ol:first-child{
+        padding-top: 40px;
+    }
+    .fnbContainer ol{
+        padding: 0 6.4%;
+        text-align: left; font-size: 18px; font-weight: 300;
+    }
+    .fnbContainer ol > li{
+        position: relative; cursor: default; margin-bottom: 35px;
+    }
+    .fnbContainer ol > li:after{
+        content: url("../images/bul_chevron.png"); position: absolute; right: 0; top: 0;
+        transition: transform 0.35s ease-out; transform: rotate(0deg);  
+    }
+    .fnbContainer ol > li:hover:after{
+        transform: rotate(90deg);
+    }
+    .fnbContainer ol > li ul{
+        margin-top: 30px;
+    }
+    .fnbContainer ol > li ul li{
+        display: none; color: #323232; margin-bottom: 35px;
+    }
+    .fnbContainer ol> li:hover ul li{
+        display: block; margin-left: 25%;
+    }
+    .fnbContainer ol> li:hover ul li a{
+        color: #878787;
+    }
+    header > div h1{
+        max-width: 370px; position: absolute; width: 35%; left: 33%;
+    }
+    header > div h1 a{
+        display: block;
+    }
+    header > div h1 a img{
+        width: 100%;
+    }
+    #searchPanel{
+        position: fixed; width: 100%; left: 0; top: 49px; 
+        background-color: #fff; z-index: 1000;
+    }
+    #searchPanel input{
+        position: relative; 
+    }
+    #searchPanel input[type='search']{
+        display: block; max-width: 767px; margin-left: 3%; padding: 20px 0; width: 30%;
+        border-style: none; background-color: transparent; 
+        text-align: left;  font-size: 18px; color: #6a6a6a; outline:none;
+    }
+
+    #searchPanel .btn_close{
+        position: absolute; right: 3%; top: 20px;
+        background: url('../images/bul_closeBtn.png') no-repeat center / 20px;
+        border-style: none; background-color: transparent;
+    }
+    
+    footer{
+        background-color: #f2f2f2; 
+        padding: 35px 0 20px;
+    } 
+    footer > div > div:not(:last-of-type) ul li a{
+        font-size: 0px; display: none;
+    }
+    footer > div > div{
+        margin: 0px; padding: 0px; list-style: none;   
+        
+    }
+    footer > div > div > h3{
+        padding: 0 2%; box-sizing: border-box; margin: 0; 
+        line-height: 50px;
+   
+    }
+    footer > div > div > h3::after{
+        content: url('../images/bul_chevron.png'); 
+        float: right;
+    }
+    footer > div > div:not(:last-of-type) ul li{
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in;  
+        margin-top: 0px;
+    }
+    footer > div > div:not(:last-of-type):hover h3::after{
+        transform: rotate(90deg) translateY(5px);
+        transition: transform 0.3s ease-in;
+    }
+    footer > div > div:not(:last-of-type):hover ul li{
+        margin-top: 25px;
+    }
+    footer > div > div:hover ul li a{    
+        color: #616161; font-size: 14px; display: block;
+    }
+    footer > div > div > div:first-child:hover a{
+        color: #616161; font-size: 14px; 
+    }
+    footer > div > div ul li{
+        margin-left: 3%;
+    }
+    footer > div > div:last-child div:first-child{
+        margin-bottom: 35px;
+    }
+    footer > div > div:last-child div:first-child h3{
+        color: #323232; font-size: 16px; 
+        padding-top: 35px;
+         margin-bottom: 25px;
+    }
+    footer > div > div:last-child div:first-child a{
+        font-size: 14px;
+    }
+    footer > div > div:last-child div:nth-child(2){
+        margin-bottom: 25px; 
+    }
+    footer > div > div:last-child div:nth-child(2) h3{
+        font-size: 14px; margin-bottom: 20px;
+    }
+    footer > div > div:last-child div:nth-child(2) input[type='email']{
+        width: 100%; max-width: 417px;
+        padding: 0 12px; line-height: 40px;
+        background: url('../images/bul_arrowForword.svg') no-repeat right center / 20px;
+        border-width: 0 0 1px;
+        border-style: none none solid;
+        border-color: #616161;
+        font-size: 8px;
+    }
+    footer > div > div:last-child div:nth-child(2) input[type='email']::placeholder{
+        font-size: 8px; color: #616161; 
+    }
+    footer > div > div:last-child div:nth-child(2) button{
+        display: none;
+    }
+    footer > div > div:last-child ul{
+        width: 100%; max-width: 417px; height: 25px;
+    }
+    footer > div > div:last-child ul li{
+        display: inline-block; width: 25px; line-height: 25px;
+    }
+    footer > div > div:last-child ul li:not(:first-child){
+        margin-left: 1%;
+    }
+    footer > div > div:last-child ul li a{
+        display: block; text-indent: -9999px; background-repeat: no-repeat;
+        background-size: contain; width: 100%; 
+    }
+    footer > div > div:last-child ul li:nth-child(1) a{background-image: url('../images/sns_01.png');}
+    footer > div > div:last-child ul li:nth-child(2) a{background-image: url('../images/sns_02.png');}
+    footer > div > div:last-child ul li:nth-child(3) a{background-image: url('../images/sns_03.png');}
+    footer > div > div:last-child ul li:nth-child(4) a{background-image: url('../images/sns_04.png');}
+    footer > div > div:last-child ul li:nth-child(5) a{background-image: url('../images/sns_05.png');}    
+    footer > div > div:last-child ul li:nth-child(6) a{background-image: url('../images/sns_06.png');}
+
+    footer p{
+        font-size: 6px; margin-top: 35px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    [id$='Panel']{
+        display: none;  
+    }
+    [id$='Panel'].active{
+        display: block;
+    }
+    header > div,
+    .videoArea div,
+    .man_area,
+    .w_bags_area,
+    .m_shoes_area,
+    footer div,
+    footer p{
+        width: 94%; margin: 0 auto;
+    }
+    header{
+        position: fixed; left: 0; top: 0; z-index: 10; width: 100%; 
+        cursor: default; background-color: #fff;
+    }
+    header:hover{
+        background-color: #f2f2f2;
+    }
+    header > div{
+        /* padding: 15px 0; display: flex; flex-flow: row nowrap; justify-content: space-between; */
+        position: relative; padding: 15px 0;
+    }
+    header nav ul li{
+        display: none;
+    }
+    header > div > input{
+        width: 20px; height: 20px;  position: fixed; top: 1.5%; left: 2%;
+        text-indent: -9999px;
+        border-style: none; box-sizing: border-box; background-color: transparent; background: no-repeat center;        
+    }
+    header > div .mui{
+        display: block;
+        background: url("../images/bul_mui.png");
+    }
+    header nav{
+        max-width: 400px; width: 100%; position: fixed; left: 0; height: 100%;
+        top: 50px; 
+        z-index: 10;
+        align-content: flex-start; background-color: #f2f2f2;
+    }
+    header nav > ul{
+        padding: 50px 3%; box-sizing: border-box;
+    }
+    header nav ul li{
+        display: block;
+    }
+    header > div > div{
+        text-align: right;
+    }
+    header > div > div ul li *{
+        font-size: 15px;
+    }
+    header > div > div ul li input[type='button']{
+        background-color: transparent; border: none;    
+    }
+    header > div > div ul li{
+        display: inline-block; vertical-align: middle;
+    }
+    header > div > div ul li:not(:last-child){
+        margin-right: 2%;
+    }
+    header > div > div ul li input{
+        display: inline-block; text-indent: -9999px; width: 20px; height: 20px; 
+        border-style: none; box-sizing: border-box; 
+        background-color: transparent; background: no-repeat center;  
+    }
+    header > div > div ul li input{
+        background-image: url("../images/bul_search.png");
+    }
+    header > div > div ul li a{
+        display: block; text-indent: -9999px; background-repeat: no-repeat;  border-style: none; box-sizing: border-box; 
+        background-size: contain;  width: 20px; height: 20px; text-align: left;
+    }
+    header > div > div ul li:nth-child(2) a{
+        background-image: url("../images/bul_account.png");
+    }
+    header > div > div ul li:last-child a{
+        background-image: url("../images/bul_shoppingbag.png");
+    }
+    header nav .btn_close{
+        display: block; left: 89%; top: 5%; position: absolute;
+        background: url('../images/bul_closeBtn.png') no-repeat center / 20px;
+        border-style: none; background-color: transparent; box-sizing: border-box;
+    }
+    .fnbContainer{
+       width: 100%; height: 100%;
+    }
+    .fnbContainer ol{
+       margin-left: 2%;   
+
+    }
+    .fnbContainer ol li {
+        display: block;
+    }
+    .fnbContainer ol li ,
+    .fnbContainer ol > li a{
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        color: #616161;
+    }
+    .fnbContainer ol:first-child{
+        padding-top: 40px;
+    }
+    .fnbContainer ol{
+        padding: 0 6.4%;
+        text-align: left; font-size: 18px; font-weight: 300;
+    }
+    .fnbContainer ol > li{
+        position: relative; cursor: default; margin-bottom: 35px;
+    }
+    .fnbContainer ol > li:after{
+        content: url("../images/bul_chevron.png"); position: absolute; right: 0; top: 0;
+        transition: transform 0.35s ease-out; transform: rotate(0deg);  
+    }
+    .fnbContainer ol > li:hover:after{
+        transform: rotate(90deg);
+    }
+    .fnbContainer ol > li ul{
+        margin-top: 30px;
+    }
+    .fnbContainer ol > li ul li{
+        display: none; color: #323232; margin-bottom: 35px;
+    }
+    .fnbContainer ol> li:hover ul li{
+        display: block; margin-left: 25%;
+    }
+    .fnbContainer ol> li:hover ul li a{
+        color: #878787;
+    }
+    header > div h1{
+        max-width: 370px; position: absolute; width: 20.5%; left: 39.75%;
+    }
+    header > div h1 a{
+        display: block;
+    }
+    header > div h1 a img{
+        width: 100%;
+    }
+
+    #searchPanel{
+        position: fixed; width: 100%; left: 0; top: 49px; 
+        background-color: #fff; z-index: 1000;
+    }
+    #searchPanel input{
+        position: relative; 
+    }
+    #searchPanel input[type='search']{
+        display: block; max-width: 1279px; margin-left: 3%; padding: 20px 0; width: 20%;
+        border-style: none; background-color: transparent; 
+        text-align: left;  font-size: 18px; color: #6a6a6a; outline:none;
+    }
+
+    #searchPanel .btn_close{
+        position: absolute; right: 3%; top: 20px;
+        background: url('../images/bul_closeBtn.png') no-repeat center / 20px;
+        border-style: none; background-color: transparent;
+    }
+    
+    footer{
+        background-color: #f2f2f2; max-height: 420px;
+        padding: 35px 0 20px;
+    }
+    footer > div{
+        margin-bottom: 50px; 
+    }
+    footer > div > div:not(:last-of-type){
+        float: left;  width: 33%;
+    }
+    footer > div > div:first-child{
+        margin-right: 3%;
+    }
+    footer > div > div.cs_sns{
+        width: 25%; margin-right: 0; 
+    }
+    footer > div > div.cs_sns div:first-child{
+        margin-left: 0px;
+    }
+    footer > div > div > h3{
+        color: #323232; font-size: 16px; margin: 55px 0 35px 0; 
+    }
+    footer > div > div ul li:not(:last-child){
+        margin-bottom: 25px;
+    }
+    footer > div > div ul li a{
+        color: #616161; font-size: 16px; 
+    }
+
+    footer > div > div:last-child div:first-child{
+        margin-bottom: 35px;
+    }
+    footer > div > div:last-child div:first-child h3{
+        color: #323232; font-size: 16px; padding-top: 55px; margin-bottom: 25px;
+    }
+    footer > div > div:last-child div:first-child a{
+        color: #616161; font-size: 16px; 
+    }
+    footer > div > div:last-child div:nth-child(2){
+        margin-bottom: 25px; margin-right: 50px;
+    }
+    footer > div > div:last-child div:nth-child(2) h3{
+        font-size: 14px; font-weight: 400; margin-bottom: 20px;
+    }
+    footer > div > div:last-child div:nth-child(2) input[type='email']{
+        width: 100%; max-width: 417px;
+        /* box-sizing: border-box; */
+        padding: 0 12px; line-height: 60px;
+        background: url('../images/bul_arrowForword.svg') no-repeat right center / 20px;
+        border-width: 0 0 1px;
+        border-style: none none solid;
+        border-color: #616161;
+        margin-bottom: 5px; font-size: 14px;
+    }
+    footer > div > div:last-child div:nth-child(2) input[type='email']::placeholder{
+        font-size: 14px; color: #616161; 
+    }
+    footer > div > div:last-child div:nth-child(2) button{
+        display: none;
+    }
+    footer > div > div:last-child ul{
+        width: 100%; max-width: 417px; height: 25px;
+    }
+    footer > div > div:last-child ul li{
+        display: inline-block; width: 25px; line-height: 25px;
+    }
+    footer > div > div:last-child ul li:not(:first-child){
+        margin-left: 1%;
+    }
+    footer > div > div:last-child ul li a{
+        display: block; text-indent: -9999px; background-repeat: no-repeat;
+        background-size: contain; width: 100%;
+    }
+    footer > div > div:last-child ul li:nth-child(1) a{background-image: url('../images/sns_01.png');}
+    footer > div > div:last-child ul li:nth-child(2) a{background-image: url('../images/sns_02.png');}
+    footer > div > div:last-child ul li:nth-child(3) a{background-image: url('../images/sns_03.png');}
+    footer > div > div:last-child ul li:nth-child(4) a{background-image: url('../images/sns_04.png');}
+    footer > div > div:last-child ul li:nth-child(5) a{background-image: url('../images/sns_05.png');}    
+    footer > div > div:last-child ul li:nth-child(6) a{background-image: url('../images/sns_06.png');}
+
+    footer p{
+        font-size: 14px;
+    }
+ 
+}
+@media screen and (min-width: 1280px){
+    .mui{
+        display: none;
+    }
+    header nav .btn_close{
+        display: none;
+    }
+    header > div,
+    header > div nav ul li .fnbContainer ol,
+    .videoArea div,
+    .man_area,
+    .m_shoes_area,
+    footer div,
+    footer p{
+        max-width: 1810px; margin: 0 auto;
+    }
+    header{
+        position: fixed; left: 0; top: 0; z-index: 10; width: 100%;
+        cursor: default; background-color: #fff;
+    }
+    header:hover{
+        background-color: #f2f2f2;
+    }
+    header > div{
+        padding: 15px 0; display: flex; flex-flow: row nowrap; justify-content: space-between;
+    }
+    header > div > *:not(h1){
+        max-width: 720px; width: 39.77%;
+    }
+    header > div > nav .mui{
+        display: none;
+    }
+    header > div > nav > ul{
+        display: flex;
+    }
+    header > div > nav > ul li{
+        display: inline-block; line-height: 38px; vertical-align: top;
+    }
+    header > div ul > li:not(:first-child){
+        margin-left: calc(8.33% - 4px);
+    }
+    header > div > nav ul li .fnbContainer{
+        display: none; position: absolute; left: 0; width: 100%; background-color: #f2f2f2;
+    }
+    header > div > nav ul li:hover .fnbContainer{
+        display: block; padding: 70px 0; box-sizing: border-box;
+    }
+    header > div > nav ul li .fnbContainer ol{
+        font-size: 18px; cursor: default; position: relative;
+    }
+    header > div > nav ul li .fnbContainer ol > li{
+        display: block;
+    }
+    header > div > nav ul li .fnbContainer ol > li span:after,
+    header > div > nav ul li .fnbContainer ol > li:not(:first-child) a:after{
+        content: url('../images/bul_chevron.png'); display: inline-block; vertical-align: middle; padding-left: 20px;
+    }
+    header > div > nav ul li .fnbContainer ol > li:hover{
+        position: relative;
+    }
+    header > div > nav ul li .fnbContainer ol > li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    header > div > nav ul li .fnbContainer ol li ul{
+        display: none; position: absolute; padding-left: 19.89%; top: 0;
+    }
+    header > div > nav ul li .fnbContainer ol li:hover ul,
+    header > div > nav ul li .fnbContainer ol li ul li{
+        display: block;
+    }
+    header > div > nav ul li .fnbContainer ol li ul li:not(:last-child){
+        padding-bottom: 20px;
+    }
+    header > div > nav ul li .fnbContainer ol li ul li a{
+        color: #616161; display: block; 
+    }
+    header > div > nav ul li .fnbContainer ol li ul li{
+        transition-duration: 0.3s; transition-timing-function: ease-out;
+    }
+    header > div > nav ul li .fnbContainer ol li ul li a{
+        opacity: 0; font-size: 1px; 
+    }
+    header > div > nav ul li .fnbContainer ol li:first-child:hover ul li a{
+        color: #616161; font-size: 18px; opacity: 100;
+    }
+
+
+
+
+    header > div h1{
+        max-width: 370px; position: absolute; width: 20.5%; left: 39.75%;
+    }
+    header > div h1 a{
+        display: block;
+    }
+    header > div h1 a img{
+        width: 100%;
+    }
+
+    header > div > div{
+        text-align: right; 
+    }
+    header > div > div ul{
+        display: inline-block; width: 65%; padding-top: 10px;
+    }
+    header > div > div ul li{
+        display: inline;
+    }
+    header > div > div ul li *{
+        font-size: 15px; 
+    }
+    header > div > div ul li input[type='button']{
+        background-color: transparent; border: none;    
+    }
+   
+
+    #searchPanel{
+        position: fixed; width: 100%; left: 0; top: 7%; 
+        background-color: #fff; z-index: 10; display: none;
+    }
+    #searchPanel.active{
+        display: block;
+    }
+    #searchPanel input{
+        position: relative; 
+    }
+    #searchPanel input[type='search']{
+        display: block; max-width: 1920px; margin-left: 2%; padding: 20px 0; width: 20%;
+        border-style: none; background-color: transparent; 
+        text-align: left;  font-size: 18px; color: #6a6a6a; outline:none;
+    }
+    #searchPanel .btn_close{
+        position: absolute; right: 3%; top: 20px;
+        background: url('../images/bul_closeBtn.png') no-repeat center / 20px;
+        border-style: none; background-color: transparent;
+    }
+    
+    footer{
+        background-color: #f2f2f2; max-height: 420px;
+        padding: 55px 0 40px;
+    }
+    footer > div{
+        margin-bottom: 50px; 
+    }
+    footer > div > div:not(:last-of-type){
+        float: left;  width: 16%;
+    }
+    footer > div > div:first-child{
+        margin-right: 3%;
+    }
+    footer > div > div.cs_sns{
+        width: 25%; margin-right: 0; 
+    }
+    footer > div > div.cs_sns div:first-child{
+        margin-left: 0px;
+    }
+    footer > div > div > h3{
+        color: #323232; font-size: 18px; margin: 35px 0 35px 0; 
+    }
+    footer > div > div ul li:not(:last-child){
+        margin-bottom: 25px;
+    }
+    footer > div > div ul li a{
+        color: #616161; font-size: 18px; 
+    }
+
+    footer > div > div:last-child div:first-child{
+        margin-bottom: 35px;
+    }
+    footer > div > div:last-child div:first-child h3{
+        color: #323232; font-size: 18px; padding-top: 55px; margin-bottom: 35px;
+    }
+    footer > div > div:last-child div:first-child a{
+        color: #616161; font-size: 16px; 
+    }
+    footer > div > div:last-child div:nth-child(2){
+        margin-bottom: 25px; margin-right: 50px;
+    }
+    footer > div > div:last-child div:nth-child(2) h3{
+        font-size: 16px; font-weight: 400; margin-bottom: 25px;
+    }
+    footer > div > div:last-child div:nth-child(2) input[type='email']{
+        width: 100%; max-width: 417px;
+        padding: 0 12px; line-height: 60px;
+        background: url('../images/bul_arrowForword.svg') no-repeat right center / 20px;
+        border-width: 0 0 1px;
+        border-style: none none solid;
+        border-color: #616161;
+        margin-bottom: 30px; font-size: 16px;
+    }
+    footer > div > div:last-child div:nth-child(2) input[type='email']::placeholder{
+        font-size: 16px; color: #616161; 
+    }
+    footer > div > div:last-child div:nth-child(2) button{
+        display: none;
+    }
+    footer > div > div:last-child ul{
+        width: 100%; max-width: 417px; height: 25px;
+    }
+    footer > div > div:last-child ul li{
+        display: inline-block; width: 25px; line-height: 25px;
+    }
+    footer > div > div:last-child ul li:not(:first-child){
+        margin-left: 1%;
+    }
+    footer > div > div:last-child ul li a{
+        display: block; text-indent: -9999px; background-repeat: no-repeat;
+        background-size: contain; width: 100%;
+    }
+    footer > div > div:last-child ul li:nth-child(1) a{background-image: url('../images/sns_01.png');}
+    footer > div > div:last-child ul li:nth-child(2) a{background-image: url('../images/sns_02.png');}
+    footer > div > div:last-child ul li:nth-child(3) a{background-image: url('../images/sns_03.png');}
+    footer > div > div:last-child ul li:nth-child(4) a{background-image: url('../images/sns_04.png');}
+    footer > div > div:last-child ul li:nth-child(5) a{background-image: url('../images/sns_05.png');}    
+    footer > div > div:last-child ul li:nth-child(6) a{background-image: url('../images/sns_06.png');}
+ 
+
+}

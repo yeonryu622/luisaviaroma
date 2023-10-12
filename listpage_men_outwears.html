@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luisaviaroma</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <input type="search" placeholder="SEARCH" title="Please enter your search term">
+        <input type="button" class="btn_close" value="closebtn"> 
+    </div>
+    <header>
+        <div>
+            <input type="button" value="fnbOpen" class="mui" data-Panel="fnbPanel">
+            <nav id="fnbPanel">
+                <ul>
+                    <li>
+                        <b>WOMEN</b>
+                        <div class="fnbContainer">
+                            <ol>
+                                <li>
+                                    <span>
+                                        CLOTHING
+                                    </span>
+                                    <ul>
+                                        <li><a href="listpage_women_outwears.html">OUTWEARS</a></li>
+                                        <li><a href="listpage_women_dresses.html">DRESSES</a></li>
+                                        <li><a href="listpage_women_tops.html">TOPS</a></li>
+                                        <li><a href="listpage_women_bottoms.html">BOTTOMS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="listpage_women_bags.html">BAGS</a></li>
+                                <li><a href="listpage_women_shoes.html">SHOES</a></li>
+                            </ol>
+                        </div>   
+                    </li>
+                    <li>
+                        <b>MEN</b>
+                        <div class="fnbContainer">
+                            <ol>
+                                <li>
+                                    <span>
+                                        CLOTHING
+                                    </span>
+                                    <ul>
+                                        <li><a href="listpage_men_outwears.html">OUTWEARS</a></li>
+                                        <li><a href="listpage_men_tops.html">TOPS</a></li>
+                                        <li><a href="listpage_men_bottoms.html">BOTTOMS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="listpage_men_bags.html">BAGS</a></li>
+                                <li><a href="listpage_men_shoes.html">SHOES</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li><a href="lvrsustainable.html">LVRSUSTAINABLE</a></li>
+                </ul>
+                
+                <input type="button" class="btn_close" value="closeBtn">
+            </nav>
+            <h1>
+            <a href="index.html">
+                <img src="images/logo.png" alt="luisaviaroma logo">
+            </a> 
+            </h1>
+            <div>
+                <ul>
+                     <li>
+                         <input type="button" value="SEARCH" data-panel="searchPanel">
+                     </li>
+                     <li>
+                         <a href="account.html">ACCOUNT</a>
+                     </li>
+                     <li>
+                         <a href="shoppingbag.html">SHOPPING BAG</a>
+                     </li>
+                </ul> 
+            </div>
+        </div>
+    </header>
+
+    <section class="listArea">
+        <nav>
+            <ol>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="listpage_men_outwears.html">MEN OUTWEARS</a>
+                </li>
+            </ol>
+        </nav>
+        <h2>OUTWEARS</h2>
+        <p>
+            The men’s Coats are staple pieces. In cooler months, the coat is your sartorial statement to the outside world.
+        </p>
+        <div>
+            <input type="button" value="Filter" data-panel="filterPanel">
+            <div id="filterPanel">
+                <form>
+                    <fieldset>
+                         <legend>COLOR</legend>
+                         <ul>
+                            <li>
+                                <input type="radio" name="filter-color" id="black-filter2">
+                                <label for="black-filter2">BLACK</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="green-filter3">
+                                <label for="green-filter3">GREEN</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="beige-filter4">
+                                <label for="beige-filter4">BEIGE</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="gray-filter8">
+                                <label for="gray-filter8">GRAY</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="orange-filter10">
+                                <label for="orange-filter10">ORANGE</label>
+                            </li>
+                         </ul>
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>SIZE</legend>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="42-filter1">
+                                <label for="42-filter1">42</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="44-filter2">
+                                <label for="44-filter2">44</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="46-filter3">
+                                <label for="46-filter3">46</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="48-filter4">
+                                <label for="48-filter4">48</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="50-filter5">
+                                <label for="50-filter5">50</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="52-filter6">
+                                <label for="52-filter6">52</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="54-filter7">
+                                <label for="54-filter7">54</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="56-filter8">
+                                <label for="56-filter8">56</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="58-filter9">
+                                <label for="58-filter9">58</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="60-filter10">
+                                <label for="60-filter10">60</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>SORT</legend>
+                        <ul>
+                            <li>
+                                <input type="radio" id="sort-filter1" name="sort">
+                                <label for="sort-filter1">Just in</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="sort-filter2" name="sort">
+                                <label for="sort-filter2">Price, low to high</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="sort-filter3" name="sort">
+                                <label for="sort-filter3">Price, high to low</label>
+                            </li>
+                        </ul>
+
+                    </fieldset>
+
+                    <div class="bottom-filter">
+                        <input type="reset" value="CLEAR ALL" class="btn_reset">
+                        <input type="button" value="CLOSE" class="btn_close">
+                    </div>
+                </form>
+            </div>
+            <ul>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_outwears_1.html"><img src="images/menoutwears_01_02.jpg" data-imgnumb="menoutwears_01_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Jil Sander <br>
+                                    Printed cotton poplin parka coat</dt>
+                                <dd>$2286</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_outwears_2.html"><img src="images/menoutwears_02_02.jpg" data-imgnumb="menoutwears_02_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Umbro <br>
+                                    Garment dyed carcoat</dt>
+                                <dd>$428</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_outwears_3.html"><img src="images/menoutwears_03_02.jpg" data-imgnumb="menoutwears_03_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Rick Owens <br>
+                                    Slubbed cotton canvas trench coat</dt>
+                                <dd>$2423</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_outwears_4.html"><img src="images/menoutwears_04_02.jpg" data-imgnumb="menoutwears_04_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Balenciaga <br>
+                                    Wool blend raglan carcoat</dt>
+                                <dd>$3173</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_outwears_5.html"><img src="images/menoutwears_05_02.jpg" data-imgnumb="menoutwears_05_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Thom Browne <br>
+                                    Classic chesterfield wool coat</dt>
+                                <dd>$3621</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_outwears_6.html"><img src="images/menoutwears_06_02.jpg" data-imgnumb="menoutwears_06_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Mm6 Maison Margiela <br>
+                                    Cotton gabardine trench coat</dt>
+                                <dd>$1368</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_outwears_7.html"><img src="images/menoutwears_07_02.jpg" data-imgnumb="menoutwears_07_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Saint Laurent <br>
+                                    Leather trench coat</dt>
+                                <dd>$8205</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_outwears_8.html"><img src="images/menoutwears_08_02.jpg" data-imgnumb="menoutwears_08_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Dsquared2 <br>
+                                    Goth Scuba peacoat</dt>
+                                <dd>$2943</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_outwears_9.html"><img src="images/menoutwears_09_02.jpg" data-imgnumb="menoutwears_09_02"  alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Balenciaga
+                                    Cotton blend parka</dt>
+                                <dd>$4923</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_outwears_10.html"><img src="images/menoutwears_10_02.jpg" data-imgnumb="menoutwears_10_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Burberry <br>
+                                    Marwood cotton parka</dt>
+                                <dd>$2133</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_outwears_11.html"><img src="images/menoutwears_11_02.jpg" data-imgnumb="menoutwears_11_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Rick Owens Drkshdw <br>
+                                    Fishtail parka jacket</dt>
+                                <dd>$1471</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_outwears_12.html"><img src="images/menoutwears_12_02.jpg" data-imgnumb="menoutwears_12_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Balmain <br>
+                                    Military virgin wool peacoat</dt>
+                                <dd>$2177</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_outwears_13.html"><img src="images/menoutwears_13_02.jpg" data-imgnumb="menoutwears_13_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Burberry <br>
+                                    Fold-over cashmere cape</dt>
+                                <dd>$3774</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_outwears_14.html"><img src="images/menoutwears_14_02.jpg" data-imgnumb="menoutwears_14_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Balmain
+                                    Double breast long coat</dt>
+                                <dd>$3052</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_outwears_15.html"><img src="images/menoutwears_15_02.jpg" data-imgnumb="menoutwears_15_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Loro Piana <br>
+                                    Nordend Cash Velvet Drap Storm coat</dt>
+                                <dd>$4923</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_outwears_16.html"><img src="images/menoutwears_16_02.jpg" data-imgnumb="menoutwears_16_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Burberry <br>
+                                    Logo pattern wool blend cape</dt>
+                                <dd>$1149</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_outwears_17.html"><img src="images/menoutwears_17_02.jpg" data-imgnumb="menoutwears_17_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Valentino <br>
+                                    Untitled wool peacoat</dt>
+                                <dd>$2735</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_outwears_18.html"><img src="images/menoutwears_18_02.jpg" data-imgnumb="menoutwears_18_02"  alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Loro Piana <br>
+                                    LP Sebring Windmate Storm coat</dt>
+                                <dd>$3391</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_outwears_19.html"><img src="images/menoutwears_19_02.jpg" data-imgnumb="menoutwears_19_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Maison Margiela <br>
+                                    Long wool overcoat</dt>
+                                <dd>$2680</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_outwears_20.html"><img src="images/menoutwears_20_02.jpg" data-imgnumb="menoutwears_20_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>JW Anderson <br>
+                                    Short Color block nylon parka V</dt>
+                                <dd>$864</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <div>
+                <h3>LUISAVIAROMA</h3>
+                <ul>
+                    <li><a href="footer_contactUs.html">CONTACT US</a></li>
+                    <li><a href="footer_ourStory.html">OUR STORY</a></li>
+                    <li><a href="footer_aboutUs.html">ABOUT US</a></li>
+                    <li><a href="footer_storesHours.html">STORES &amp; HOURS</a></li>
+                    <li><a href="footer_privacyPolicy.html">PRIVACY POLICY</a></li>
+                    <li><a href="footer_cookiePolicy.html">COOKIE POLICY</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>SHOPPING ONLINE</h3>
+                <ul>
+                    <li><a href="footer_pricesCurrency.html">PRICES &amp; CURRENCY</a></li>
+                    <li><a href="footer_orderPayment.html">ORDER PAYMENT</a></li>
+                    <li><a href="footer_shipmentFees.html">SHIPMENT &amp; FEES</a></li>
+                    <li><a href="footer_returnPolicy.html">RETURN POLICY</a></li>
+                    <li><a href="footer_termsConditions.html">TERMS &amp; CONDITIONS</a></li>
+                    <li><a href="footer_virtualGiftCard.html">VIRTUAL GIFT CARD</a></li>
+                </ul>
+            </div>
+            <div class="cs_sns">
+                <div>
+                    <h3>CUSTOMER SERVICE</h3>
+                    <a href="footer_FAQ.html">FREQUENTLY ASKED QUESTIONS</a>
+                </div>
+                <div>
+                    <h3>SIGN UP FOR NEWS &amp; UPDATES</h3>
+                    <input type="email" name="contact email" id="newsletter_email" placeholder="Enter your email...">
+                    <button class="material-symbols-outlined">
+                        arrow_forward
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="https://www.facebook.com/luisaviaroma/">facebook</a></li>
+                    <li><a href="https://www.instagram.com/luisaviaroma/">Instagram</a></li>
+                    <li><a href="https://twitter.com/LuisaViaRoma">Twitter</a></li>
+                    <!-- <li><a href="https://line.me/R/ti/p/@luisaviaroma?from=page&accountId=luisaviaroma">Line</a></li> -->
+                    <li><a href="https://www.youtube.com/user/Luisaviaroma">Youtube</a></li>
+                    <li><a href="https://mp.weixin.qq.com/s?__biz=MzIzMzMzNTc1MQ==&mid=100001291&idx=1&sn=3961e746a092fe71f24992efbd6d4b5a&chksm=688678a35ff1f1b5743c4153a525e928449cb0f9d5fb91673d279094f71fc40008c21b76b57f&mpshare=1&scene=1&srcid=0309N473TCj4MjfAYkcb7oru&pass_ticket=ftdBpTCwEnUwINolXwxdvcQr7QBS9bVfRdnHG8zGAfSu6oVjksxCwkf51h4lfvEL#rd">Wechat</a></li>
+                    <li><a href="https://www.pinterest.co.kr/luisaviaroma/">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2004-2023 LUISA VIA ROMA S.P.A. - VAT number: IT 00607970480 - Via Benedetto Varchi 61, 50132 Firenze</p>
+    </footer>
+</body>
+</html>

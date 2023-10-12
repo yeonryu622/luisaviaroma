@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luisaviaroma</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <input type="search" placeholder="SEARCH" title="Please enter your search term">
+        <input type="button" class="btn_close" value="closebtn"> 
+    </div>
+    <header>
+        <div>
+            <input type="button" value="fnbOpen" class="mui" data-Panel="fnbPanel">
+            <nav id="fnbPanel">
+                <ul>
+                    <li>
+                        <b>WOMEN</b>
+                        <div class="fnbContainer">
+                            <ol>
+                                <li>
+                                    <span>
+                                        CLOTHING
+                                    </span>
+                                    <ul>
+                                        <li><a href="listpage_women_outwears.html">OUTWEARS</a></li>
+                                        <li><a href="listpage_women_dresses.html">DRESSES</a></li>
+                                        <li><a href="listpage_women_tops.html">TOPS</a></li>
+                                        <li><a href="listpage_women_bottoms.html">BOTTOMS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="listpage_women_bags.html">BAGS</a></li>
+                                <li><a href="listpage_women_shoes.html">SHOES</a></li>
+                            </ol>
+                        </div>   
+                    </li>
+                    <li>
+                        <b>MEN</b>
+                        <div class="fnbContainer">
+                            <ol>
+                                <li>
+                                    <span>
+                                        CLOTHING
+                                    </span>
+                                    <ul>
+                                        <li><a href="listpage_men_outwears.html">OUTWEARS</a></li>
+                                        <li><a href="listpage_men_tops.html">TOPS</a></li>
+                                        <li><a href="listpage_men_bottoms.html">BOTTOMS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="listpage_men_bags.html">BAGS</a></li>
+                                <li><a href="listpage_men_shoes.html">SHOES</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li><a href="lvrsustainable.html">LVRSUSTAINABLE</a></li>
+                </ul>
+                
+                <input type="button" class="btn_close" value="closeBtn">
+            </nav>
+            <h1>
+            <a href="index.html">
+                <img src="images/logo.png" alt="luisaviaroma logo">
+            </a> 
+            </h1>
+            <div>
+                <ul>
+                     <li>
+                         <input type="button" value="SEARCH" data-panel="searchPanel">
+                     </li>
+                     <li>
+                         <a href="account.html">ACCOUNT</a>
+                     </li>
+                     <li>
+                         <a href="shoppingbag.html">SHOPPING BAG</a>
+                     </li>
+                </ul> 
+            </div>
+        </div>
+    </header>
+
+    <section class="listArea">
+        <nav>
+            <ol>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="listpage_men_bottoms.html">MEN BOTTOMS</a>
+                </li>
+            </ol>
+        </nav>
+        <h2>BOTTOMS</h2>
+        <p>
+            Find the perfect Pant and Jean for any occasion.
+        </p>
+        <div>
+            <input type="button" value="Filter" data-panel="filterPanel">
+            <div id="filterPanel">
+                <form>
+                    <fieldset>
+                         <legend>COLOR</legend>
+                         <ul>
+                            <li>
+                                <input type="radio" name="filter-color" id="white-filter1">
+                                <label for="white-filter1">WHITE</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="black-filter2">
+                                <label for="black-filter2">BLACK</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="green-filter3">
+                                <label for="green-filter3">GREEN</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="beige-filter4">
+                                <label for="beige-filter4">BEIGE</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="blue-filter5">
+                                <label for="blue-filter5">BLUE</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="filter-color" id="brown-filter9">
+                                <label for="brown-filter9">BROWN</label>
+                            </li>
+                         </ul>
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>SIZE</legend>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="40-filter0">
+                                <label for="40-filter0">40</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="42-filter1">
+                                <label for="42-filter1">42</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="44-filter2">
+                                <label for="44-filter2">44</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="46-filter3">
+                                <label for="46-filter3">46</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="48-filter4">
+                                <label for="48-filter4">48</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="50-filter5">
+                                <label for="50-filter5">50</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="52-filter6">
+                                <label for="52-filter6">52</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="54-filter7">
+                                <label for="54-filter7">54</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="56-filter8">
+                                <label for="56-filter8">56</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="58-filter9">
+                                <label for="58-filter9">58</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-size" id="60-filter10">
+                                <label for="60-filter10">60</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>SORT</legend>
+                        <ul>
+                            <li>
+                                <input type="radio" id="sort-filter1" name="sort">
+                                <label for="sort-filter1">Just in</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="sort-filter2" name="sort">
+                                <label for="sort-filter2">Price, low to high</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="sort-filter3" name="sort">
+                                <label for="sort-filter3">Price, high to low</label>
+                            </li>
+                        </ul>
+
+                    </fieldset>
+
+                    <div class="bottom-filter">
+                        <input type="reset" value="CLEAR ALL" class="btn_reset">
+                        <input type="button" value="CLOSE" class="btn_close">
+                    </div>
+                </form>
+            </div>
+            <ul>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_bottoms_1.html"><img src="images/menbottoms_01_02.jpg" data-imgnumb="menbottoms_01_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Bluemarble <br>
+                                    Cotton cargo pants</dt>
+                                <dd>$352</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_bottoms_2.html"><img src="images/menbottoms_02_02.jpg" data-imgnumb="menbottoms_02_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Loro Piana <br>
+                                    Merse heavy cotton oxford pants</dt>
+                                <dd>$678</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_bottoms_3.html"><img src="images/menbottoms_03_02.jpg" data-imgnumb="menbottoms_03_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Gucci <br>
+                                    Kawaii cotton drill chino pants</dt>
+                                <dd>$864</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_bottoms_4.html"><img src="images/menbottoms_04_02.jpg" data-imgnumb="menbottoms_04_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Saint Laurent <br>
+                                    Satin flared pants</dt>
+                                <dd>$1630</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_bottoms_5.html"><img src="images/menbottoms_05_02.jpg" data-imgnumb="menbottoms_05_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Represent <br>
+                                    V2 cotton military pants</dt>
+                                <dd>$197</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_bottoms_6.html"><img src="images/menbottoms_06_02.jpg" data-imgnumb="menbottoms_06_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Egonlab <br>
+                                    Sami tailored wool flared pants</dt>
+                                <dd>$536</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_bottoms_7.html"><img src="images/menbottoms_07_02.jpg" data-imgnumb="menbottoms_07_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Corneliani <br>
+                                    Cotton twill pants</dt>
+                                <dd>$254</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_bottoms_8.html"><img src="images/menbottoms_08_02.jpg" data-imgnumb="menbottoms_08_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Moncler Genius <br>
+                                    Alicia Keys cotton sweatpants</dt>
+                                <dd>$624</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_bottoms_9.html"><img src="images/menbottoms_09_02.jpg" data-imgnumb="menbottoms_09_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Our Legacy <br>
+                                    Mount cargo pants</dt>
+                                <dd>$394</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_bottoms_10.html"><img src="images/menbottoms_10_02.jpg" data-imgnumb="menbottoms_10_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Dickies <br>
+                                    Eddyville double knee pants</dt>
+                                <dd>$93</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_bottoms_11.html"><img src="images/menbottoms_11_02.jpg" data-imgnumb="menbottoms_11_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Balmain <br>
+                                    Destroyed loose denim jeans</dt>
+                                <dd>$1477</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_bottoms_12.html"><img src="images/menbottoms_12_02.jpg" data-imgnumb="menbottoms_12_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Amiri <br>
+                                    Amiri Shadow plaid baggy jeans</dt>
+                                <dd>$1083</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_bottoms_13.html"><img src="images/menbottoms_13_02.jpg" data-imgnumb="menbottoms_13_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>VETEMENTS <br>
+                                    Destroyed baggy cotton denim jeans</dt>
+                                <dd>$1586</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_bottoms_14.html"><img src="images/menbottoms_14_02.jpg" data-imgnumb="menbottoms_14_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Gucci <br>
+                                    Cotton denim jeans w/ raw cut hem</dt>
+                                <dd>$853</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_bottoms_15.html"><img src="images/menbottoms_15_02.jpg" data-imgnumb="menbottoms_15_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Dolce &amp; Gabbana <br>
+                                    Destroyed patchwork jeans</dt>
+                                <dd>$2133</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_bottoms_16.html"><img src="images/menbottoms_16_02.jpg" data-imgnumb="menbottoms_16_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>JUNYA WATANABE <br>
+                                    Andy Warhol denim jeans</dt>
+                                <dd>$1075</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_bottoms_17.html"><img src="images/menbottoms_17_02.jpg" data-imgnumb="menbottoms_17_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>RE/DONE <br>
+                                    16.5cm 50s Straight cotton denim jeans</dt>
+                                <dd>$388</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_bottoms_18.html"><img src="images/menbottoms_18_02.jpg" data-imgnumb="menbottoms_18_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>MSFTSrep <br>
+                                    Trippy straight cotton denim jeans</dt>
+                                <dd>$292</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_bottoms_19.html"><img src="images/menbottoms_19_02.jpg" data-imgnumb="menbottoms_19_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Acupuncture <br>
+                                    Paisley printed cotton denim jeans</dt>
+                                <dd>$203</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="detailpage_m_bottoms_20.html"><img src="images/menbottoms_20_02.jpg" data-imgnumb="menbottoms_20_02" alt="ex"></a>
+                        <figcaption>
+                            <dl>
+                                <dt>Gallery Dept. <br>
+                                    Logan recycled denim jeans</dt>
+                                <dd>$2926</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <div>
+                <h3>LUISAVIAROMA</h3>
+                <ul>
+                    <li><a href="footer_contactUs.html">CONTACT US</a></li>
+                    <li><a href="footer_ourStory.html">OUR STORY</a></li>
+                    <li><a href="footer_aboutUs.html">ABOUT US</a></li>
+                    <li><a href="footer_storesHours.html">STORES &amp; HOURS</a></li>
+                    <li><a href="footer_privacyPolicy.html">PRIVACY POLICY</a></li>
+                    <li><a href="footer_cookiePolicy.html">COOKIE POLICY</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>SHOPPING ONLINE</h3>
+                <ul>
+                    <li><a href="footer_pricesCurrency.html">PRICES &amp; CURRENCY</a></li>
+                    <li><a href="footer_orderPayment.html">ORDER PAYMENT</a></li>
+                    <li><a href="footer_shipmentFees.html">SHIPMENT &amp; FEES</a></li>
+                    <li><a href="footer_returnPolicy.html">RETURN POLICY</a></li>
+                    <li><a href="footer_termsConditions.html">TERMS &amp; CONDITIONS</a></li>
+                    <li><a href="footer_virtualGiftCard.html">VIRTUAL GIFT CARD</a></li>
+                </ul>
+            </div>
+            <div class="cs_sns">
+                <div>
+                    <h3>CUSTOMER SERVICE</h3>
+                    <a href="footer_FAQ.html">FREQUENTLY ASKED QUESTIONS</a>
+                </div>
+                <div>
+                    <h3>SIGN UP FOR NEWS &amp; UPDATES</h3>
+                    <input type="email" name="contact email" id="newsletter_email" placeholder="Enter your email...">
+                    <button class="material-symbols-outlined">
+                        arrow_forward
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="https://www.facebook.com/luisaviaroma/">facebook</a></li>
+                    <li><a href="https://www.instagram.com/luisaviaroma/">Instagram</a></li>
+                    <li><a href="https://twitter.com/LuisaViaRoma">Twitter</a></li>
+                    <!-- <li><a href="https://line.me/R/ti/p/@luisaviaroma?from=page&accountId=luisaviaroma">Line</a></li> -->
+                    <li><a href="https://www.youtube.com/user/Luisaviaroma">Youtube</a></li>
+                    <li><a href="https://mp.weixin.qq.com/s?__biz=MzIzMzMzNTc1MQ==&mid=100001291&idx=1&sn=3961e746a092fe71f24992efbd6d4b5a&chksm=688678a35ff1f1b5743c4153a525e928449cb0f9d5fb91673d279094f71fc40008c21b76b57f&mpshare=1&scene=1&srcid=0309N473TCj4MjfAYkcb7oru&pass_ticket=ftdBpTCwEnUwINolXwxdvcQr7QBS9bVfRdnHG8zGAfSu6oVjksxCwkf51h4lfvEL#rd">Wechat</a></li>
+                    <li><a href="https://www.pinterest.co.kr/luisaviaroma/">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2004-2023 LUISA VIA ROMA S.P.A. - VAT number: IT 00607970480 - Via Benedetto Varchi 61, 50132 Firenze</p>
+    </footer>
+</body>
+</html>
