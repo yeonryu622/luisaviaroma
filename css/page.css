@@ -920,7 +920,7 @@ input[type=number]::-webkit-outer-spin-button {
     
     .shoppingBag_Area > div:nth-of-type(1) ol li > div > input[type='button']{
         width: 5%; 
-        padding: 1px 10%; 
+        padding: 1px 8%; 
     }
     .shoppingBag_Area > div:nth-of-type(1) ol li span{
         display: none; 
