@@ -293,7 +293,7 @@ input[type=number]::-webkit-outer-spin-button {
         padding: 5px 1%; max-width: 90px; box-sizing: border-box;
     }
     section video{
-        width: 100%; max-width: 767px; margin-top: 50px;
+        width: 100%; max-width: 767px; margin-top: 45px;
     }
     .videoArea div{
         padding-top: 45px;
